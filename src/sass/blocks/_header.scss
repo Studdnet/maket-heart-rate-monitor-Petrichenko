@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__logo {
+		width: 251px;
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__official {
+		font-weight: 500;
+		font-size: 12px;
+		color: #fff;
+		text-align: center;
+
+		span {
+			font-weight: 500;
+			font-size: 18px;
+			display: block;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	&__phone {
+		display: block;
+		font-weight: 700;
+		font-size: 18px;
+		color: #fff;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $main-color;
+			text-decoration: none;
+		}
+	}
+}
