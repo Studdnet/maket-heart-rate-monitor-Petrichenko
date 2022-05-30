@@ -17,5 +17,18 @@
 		"gulp-rename": "^2.0.0",
 		"gulp-sass": "^5.1.0",
 		"sass": "^1.52.1"
-	}
+	},
+	"browserslist": {
+		"production": [
+		  ">0.2%",
+		  "not dead",
+		  "not op_mini all"
+		],
+		"development": [
+		  "last 2 chrome version",
+		  "last 2 firefox version",
+		  "last 2 safari version",
+		  "last 2 ie version"
+		]
+	 }
 }
