@@ -5,10 +5,12 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+	 padding: 0 10px
 }
 @import 'blocks/promo';
-@import 'blocks/header.scss';
+@import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/advantages';
 @import 'blocks/titles';
+@import 'block/media';
 
