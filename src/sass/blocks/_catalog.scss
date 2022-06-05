@@ -44,6 +44,8 @@
 
 	&__content {
 		margin-top: 60px;
+		display: flex;
+		gap: 0 10px;
 	}
 
 	&-item {
@@ -79,6 +81,7 @@
 			font-size: 14px;
 			line-height: 22px;
 			color: #0D0D0D;
+			flex: 1 1 auto;
 		}
 
 		&__link {
