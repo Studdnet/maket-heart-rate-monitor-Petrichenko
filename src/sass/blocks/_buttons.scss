@@ -29,4 +29,12 @@
 		height: 58px;
 		font-size: 16px;
 	}
+
+	&_catalog {
+		width: 135px;
+		height: 44px;
+		&:hover {
+			background-color: #e2d6d6;
+		}
+	}
 }
