@@ -44,19 +44,117 @@
 
 	&__content {
 		margin-top: 60px;
-		display: flex;
-		gap: 0 10px;
+		display: none;
+		flex-wrap: wrap;
+
+		&_active {
+			display: flex;
+		}
 	}
 
 	&-item {
-		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
 		padding: 20px 20px 27px 20px;
-		max-width: 303px;
+		max-width: 290px;
 		background: #FFFFFF;
 		border: 2px solid #E8E8E8;
+		overflow: hidden;
+		margin: 0px 8px 15px 8px;
+
+		&__wrapper {
+			display: flex;
+			width: calc(200% + 40px);
+		}
+
+		&__content {
+			text-align: center;
+			width: 50%;
+			margin-right: 0px;
+			transform: translateX(-100%);
+			transition: all 0.3s ease 0s;
+
+			&_active {
+				transform: translateX(0%);
+				margin-right: 20px;
+			}
+		}
+
+		&__list {
+			width: 50%;
+			margin-left: 20px;
+			transform: translateX(0%);
+			transition: all 0.3s ease 0s;
+			padding-right: 20px;
+			padding-left: 0;
+			margin-bottom: 0;
+			list-style-type: none;
+
+			&_active {
+				transform: translateX(-100%);
+				margin-left: 0px;
+			}
+
+			li {
+				font-weight: 300;
+				font-size: 14px;
+				line-height: 21px;
+				color: #555555;
+				margin-bottom: 10px;
+				position: relative;
+				padding-left: 15px;
+
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					width: 8px;
+					height: 8px;
+					background: #C70101;
+					top: 7px;
+					left: 0;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		&__back {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translateX(calc(-50% - 15px));
+			display: block;
+			color: $main-color;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 14px;
+			text-transform: uppercase;
+
+			&:hover {
+				text-decoration: none;
+				color: $main-color;
+			}
+
+			&:before {
+				content: "";
+				position: absolute;
+				bottom: 0px;
+				left: 0;
+				height: 1px;
+				width: 100%;
+				background-color: $main-color;
+				transition: all 0.3s ease 0s;
+			}
+
+			&:hover:before {
+				width: 0%;
+			}
+
+		}
 
 		&__img {
 			max-height: 200px;
