@@ -4,15 +4,19 @@
 	line-height: 30px;
 	color: #0D0D0D;
 	text-transform: uppercase;
+
 	&_advantages {
 		text-align: center;
 	}
+
 	&_consultation {
 		color: #FFFFFF;
 		max-width: 650px;
 		line-height: 54px;
 	}
-	&_catalog {
+
+	&_catalog,
+	&_reviews {
 		text-align: center;
 	}
 }

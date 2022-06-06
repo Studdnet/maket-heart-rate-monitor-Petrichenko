@@ -15,6 +15,7 @@
 
 	.carousel {
 		padding-bottom: 50px;
+
 		&__inner {
 			position: relative;
 			max-width: 600px;
@@ -26,6 +27,7 @@
 	.catalog {
 		&__content {
 			margin-top: 50px;
+
 			&_active {
 				justify-content: center;
 			}
@@ -76,6 +78,25 @@
 
 	.consultation {
 		padding: 60px 0 80px;
+	}
+
+	.catalog {
+		padding-bottom: 60px;
+	}
+
+	.reviews {
+		&__item {
+			margin-top: 30px;
+		}
+
+		&__img {
+			flex: 0 0 140px;
+		}
+
+		&__descr {
+			font-size: 14px;
+			line-height: 20px;
+		}
 	}
 }
 
@@ -141,8 +162,40 @@
 	}
 
 	.catalog {
+		padding-bottom: 40px;
+
 		&__tabs {
 			margin-top: 30px;
+		}
+	}
+
+	.reviews {
+		&__row {
+			margin-top: 40px;
+		}
+
+		&__item {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin-top: 30px;
+		}
+
+		&__body {
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		&__title {
+			margin-top: 15px;
+		}
+
+		&__descr {
+			text-align: left;
+		}
+
+		&__img {
+			max-width: 140px;
 		}
 	}
 }
