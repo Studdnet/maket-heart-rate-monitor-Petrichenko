@@ -35,10 +35,11 @@
 		font-weight: 700;
 		font-size: 18px;
 		color: #fff;
-		transition: color 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
 		&:hover {
-			color: $main-color;
+			transform: scale(1.15);
 			text-decoration: none;
+			color: #fff;
 		}
 	}
 }
