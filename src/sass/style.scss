@@ -2,11 +2,22 @@
 * {
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
+body._lock {
+	overflow: hidden;
+}
+
+button:focus,
+a:focus {
+	outline: 1px solid $main-color;
+}
+
 .container {
     max-width: 950px;
     margin: 0 auto;
 	 padding: 0 15px
 }
+
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
@@ -18,5 +29,6 @@
 @import 'blocks/catalog';
 @import 'blocks/reviews';
 @import 'blocks/footer';
+@import 'blocks/modal';
 @import 'blocks/media';
 
