@@ -50,10 +50,10 @@ $(document).ready(function () {
 		$('.overlay, #consultation, #order, #thanks').fadeOut();
 	});
 
-	$('.overlay').on('click', function () {
-		$('body').removeClass('_lock');
-		$('.overlay, #consultation, #order, #thanks').fadeOut();
-	});
+	// $('.overlay').on('click', function () {
+	// 	$('body').removeClass('_lock');
+	// 	$('.overlay, #consultation, #order, #thanks').fadeOut();
+	// });
 
 	$('.button_catalog').each(function (i) {
 		$(this).on('click', function () {
@@ -61,5 +61,36 @@ $(document).ready(function () {
 			$('.overlay, #order').fadeIn('slow');
 		});
 	});
+
+	function validateForms(form) {
+		$(form).validate({
+			rules: {
+				name: {
+					required: true,
+					minlength: 2
+				 },
+				phone: "required",
+				email: {
+					required: true,
+					email: true
+				}
+			},
+			messages: {
+				name: {
+					required: "Введите свое имя",
+					minlength: jQuery.validator.format("Минимальное кол-во символов: {0}")
+				 },
+				phone: "Введите номер вашего телефона",
+				email: {
+					required: "Нам нужен ваш email для обратной связи",
+					email: "Ваш email должен соответствовать формату: name@domain.com"
+				}
+			}
+		});
+	}
+
+	validateForms('#consultation-form');
+	validateForms('#consultation form');
+	validateForms('#order form');
 
 });

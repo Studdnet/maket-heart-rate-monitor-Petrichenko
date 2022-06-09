@@ -8,7 +8,7 @@
 }
 
 .modal {
-	padding: 35px 40px 0 40px;
+	padding: 35px 40px 35px 40px;
 	width: 382px;
 	min-height: 402px;
 	background: #F2F2F2;
@@ -53,6 +53,19 @@
 
 	&_mini {
 		min-height: 143px;
+	}
+
+	.error {
+		font-size: 13px;
+		border: 1px solid red;
+		&:active,
+		&:focus {
+			border: none;
+		}
+	}
+
+	label.error {
+		border: none;
 	}
 }
 

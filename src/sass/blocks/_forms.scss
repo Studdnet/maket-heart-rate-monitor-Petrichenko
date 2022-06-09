@@ -13,16 +13,19 @@
 		color: #4B4B4B;
 		font-weight: 300;
 		font-size: 14px;
+		margin-bottom: 13px;
 		&:focus {
-			outline: 2px solid $main-color;
-		}
-		&:nth-child(2),
-		&:nth-child(3) {
-			margin-top: 13px;
+			outline: 2px solid green
 		}
 	}
 
 	&_mt-25 {
 		margin-top: 25px;
+	}
+
+	input.error {
+		&:focus {
+			outline: 2px solid red;
+		}
 	}
 }
