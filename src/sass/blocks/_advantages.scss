@@ -19,12 +19,24 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
+		transition: all 0.3s ease 0s;
+		&:hover {
+			transform: scale(1.1);
+		}
 	}
 }
 
 .item {
 
-	&__img {}
+	&__img {
+
+		&_animated {
+			animation: heartbeat 0.8s ease-in infinite;
+			&:hover {
+				animation-play-state: paused;
+			}
+		}
+	}
 
 	&__subtitle {
 		margin-top: 35px;
