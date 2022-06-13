@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 	<link rel="stylesheet" href="css/font.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -100,7 +101,7 @@
 		</div>
 	</section>
 
-	<section class="carousel">
+	<div class="carousel">
 		<div class="container">
 			<div class="carousel__inner">
 				<div class="carousel__slide"><img src="img/slide_1.jpg" alt="Slide"></div>
@@ -108,7 +109,7 @@
 				<div class="carousel__slide"><img src="img/slide_3.png" alt="Slide"></div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<section class="catalog" id="catalog">
 		<div class="container">
@@ -436,7 +437,7 @@
 		<div class="container">
 			<div class="title title_reviews">Отзывы клиентов</div>
 			<div class="reviews__row">
-				<div class="reviews__item">
+				<div class="reviews__item animate__animated wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="1s">
 					<div class="reviews__img">
 						<img src="img/feed_1.png" alt="feed">
 					</div>
@@ -452,7 +453,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__item">
+				<div class="reviews__item animate__animated wow animate__fadeInRight" data-wow-duration="2s" data-wow-delay="2s">
 					<div class="reviews__img">
 						<img src="img/feed_2.png" alt="feed">
 					</div>
@@ -469,7 +470,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="reviews__item">
+				<div class="reviews__item animate__animated wow animate__fadeInLeft" data-wow-duration="2s" data-wow-delay="3s">
 					<div class="reviews__img">
 						<img src="img/feed_3.png" alt="feed">
 					</div>
@@ -546,11 +547,12 @@
 
 	<a href="#up" class="pageUp"><img src="icons/circle-chevron-up-solid.svg" alt="arrow-up"></a>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 
