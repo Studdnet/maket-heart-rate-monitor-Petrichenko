@@ -188,6 +188,14 @@
 		&__tabs {
 			margin-top: 30px;
 		}
+
+		&-item {
+			&__content {
+				img {
+					max-height: 150px;
+				}
+			}
+		}
 	}
 
 	.reviews {
@@ -232,6 +240,10 @@
 
 		&__contacts {
 			margin-top: 10px;
+
+			button {
+				margin-top: 8px;
+			}
 		}
 	}
 
@@ -281,6 +293,30 @@
 
 	.button_main {
 		margin-top: 35px;
+	}
+
+	.modal {
+		max-width: 300px;
+
+		.button_submit {
+			width: 100%;
+			height: 40px;
+			font-size: 14px;
+		}
+
+		.feed-form {
+			input {
+				height: 40px;
+			}
+		}
+	}
+
+	.footer {
+		height: 400px;
+
+		&__contacts {
+			max-width: 350px;
+		}
 	}
 }
 
@@ -353,12 +389,29 @@
 
 		&__social {
 			margin-top: 15px;
+
 			&_item {
 				margin-right: 15px;
-			&:last-child {
-				margin-right: 0;
+
+				&:last-child {
+					margin-right: 0;
+				}
 			}
-			}
+		}
+	}
+
+	.modal {
+		max-width: 250px;
+		.button_submit {
+			height: 40px;
+			font-size: 12px;
+		}
+	}
+
+	.pageUp {
+		visibility: hidden;
+		img {
+			display: none;
 		}
 	}
 }
