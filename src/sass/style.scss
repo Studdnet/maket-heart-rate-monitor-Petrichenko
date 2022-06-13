@@ -7,8 +7,7 @@ body._lock {
 	overflow: hidden;
 }
 
-button:focus,
-a:focus {
+button:focus {
 	outline: 1px solid $main-color;
 }
 
@@ -30,5 +29,6 @@ a:focus {
 @import 'blocks/reviews';
 @import 'blocks/footer';
 @import 'blocks/modal';
+@import 'blocks/pageUp';
 @import 'blocks/media';
 

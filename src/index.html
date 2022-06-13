@@ -13,7 +13,7 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -48,7 +48,7 @@
 					</div>
 				</div>
 				<button class="button button_main" data-modal="consultation">Заказать консультацию</button>
-				<div class="promo__link">или <a href="#">перейти в каталог</a></div>
+				<div class="promo__link">или <a href="#catalog">перейти в каталог</a></div>
 			</div>
 		</div>
 	</section>
@@ -110,7 +110,7 @@
 		</div>
 	</section>
 
-	<section class="catalog">
+	<section class="catalog" id="catalog">
 		<div class="container">
 			<h2 class="title title_catalog">Каталог пульсометров</h2>
 			<ul class="catalog__tabs">
@@ -543,6 +543,8 @@
 			<div class="modal__descr modal__descr_mini">Наш менеджер свяжется с вами в ближайшее время!</div>
 		</div>
 	</div>
+
+	<a href="#up" class="pageUp"><img src="icons/circle-chevron-up-solid.svg" alt="arrow-up"></a>
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

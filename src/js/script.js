@@ -117,4 +117,20 @@ $(document).ready(function () {
 		return false; 
 	});
 
+	// Smooth scroll and pageUp
+
+	$(window).scroll(function () {
+		if ($(this).scrollTop() > 500) {
+			$('.pageUp').fadeIn();
+		} else {
+			$('.pageUp').fadeOut();
+		}
+	});
+
+	$("a[href^='#']").click(function () {
+		const _href = $(this).attr("href");
+		$("html, body").animate({scrollTop: $(_href).offset().top + "px"});
+		return false;
+	});
+
 });
